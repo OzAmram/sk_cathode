@@ -7,7 +7,7 @@ from sklearn.metrics import roc_curve, roc_auc_score
 
 
 def plot_roc_and_sic(y_true, y_scores, pos_label=None, sample_weight=None,
-                     labels=None, sic_max=None, roc_max=1e4,
+                     labels=None, sic_max=20, roc_max=1e4,
                      include_random=True):
     """
     Draw ROC and SIC curves from multiple sources on the same plots.
